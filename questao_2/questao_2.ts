@@ -11,6 +11,10 @@ function q2ContarFrequenciaPalavra(text: string) {
   // convertendo as letras do texto para minúsculas e dividindo a string em palavras.
   const textList = text.toLowerCase().split(/\s+/);
 
+  // Explicação do regex:
+  // - `\s+` corresponde a um ou mais espaços em branco, permitindo dividir o texto em palavras corretamente.
+  // Se eu fizesse simplesmente um `.split(' ')`, ele não funcionaria corretamente se houvesse múltiplos espaços entre as palavras.
+
   // O objeto `frequency` é inicializado e serve para armazenar a frequência de cada palavra.
   const frequency = {};
 
