@@ -7,10 +7,10 @@ function q1RemoverDuplicados(nums) {
 
   // Loop para percorrer a lista com o index i
   for (let i = 0; i < nums.length; i++) {
-    // Loop para verificar o elemento posterior ao atual na lista
+    // Loop para verificar os elementos posteriores ao atual (i) na lista
     for (let j = i + 1; j < nums.length; j++) {
-      // Se o elemento atual for igual ao próximo, remove o próximo e decrementa j
-      // para evitar pular o próximo elemento
+      // Se o elemento atual for igual a algum elemento posterior, remove o elemento posterior
+      // e decrementa j para evitar pular o próximo elemento
       if (nums[i] === nums[j]) {
         nums.splice(j, 1);
         j--;
