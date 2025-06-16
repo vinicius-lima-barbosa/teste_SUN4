@@ -50,7 +50,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 z-30 w-full border-b border-gray-200 shadow-sm">
+    <nav className="fixed top-0 z-30 w-full bg-white border-b border-gray-200 shadow-sm">
       <div className="px-6 py-4 flex items-center justify-between max-w-7xl mx-auto h-16">
         <h1 className="text-3xl font-extrabold text-indigo-600">
           SUN4 Advogados
