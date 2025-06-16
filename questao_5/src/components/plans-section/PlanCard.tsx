@@ -35,7 +35,7 @@ const PlanCard = (plan: PlanCardProps) => {
             <div className="bg-indigo-600 rounded-full p-1">
               <FaCheck className="text-white h-3 w-3" />
             </div>
-            <p>{task}</p>
+            <p className="text-gray-700">{task}</p>
           </div>
         ))}
       </div>
