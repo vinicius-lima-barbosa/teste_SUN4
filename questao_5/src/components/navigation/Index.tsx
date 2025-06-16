@@ -61,7 +61,7 @@ const Navigation = () => {
               key={item.id}
               type="button"
               onClick={() => scrollToSection(item.id)}
-              className="relative hover:text-indigo-600 cursor-pointer transition-colors duration-200"
+              className="relative text-gray-700 hover:text-indigo-600 cursor-pointer transition-colors duration-200"
             >
               {item.label}
               <span
