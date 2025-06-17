@@ -1,3 +1,5 @@
+import toast from "react-hot-toast";
+
 const ContactSection = () => {
   return (
     <section id="contact" className="py-20 px-6">
@@ -61,7 +63,11 @@ const ContactSection = () => {
               required
             />
           </div>
-          <button className="w-full bg-indigo-600 text-white py-4 rounded-xl font-semibold shadow hover:bg-indigo-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 transition cursor-pointer">
+          <button
+            type="submit"
+            onClick={() => toast.success("E-mail enviado com sucesso")}
+            className="w-full bg-indigo-600 text-white py-4 rounded-xl font-semibold shadow hover:bg-indigo-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 transition cursor-pointer"
+          >
             Enviar Mensagem
           </button>
         </form>

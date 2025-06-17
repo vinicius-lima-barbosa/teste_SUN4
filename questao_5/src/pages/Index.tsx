@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import ContactSection from "../components/contact-section/Index";
 import Footer from "../components/footer/Index";
 import HeroSection from "../components/hero-section/Index";
@@ -14,6 +15,7 @@ const Index = () => {
       <ServicesSection />
       <ContactSection />
       <Footer />
+      <Toaster position="top-right" />
     </>
   );
 };
