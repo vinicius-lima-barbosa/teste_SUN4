@@ -1,4 +1,5 @@
 import { FaCheck } from "react-icons/fa";
+import { scrollToSection } from "../../utils/ScrollToSection";
 
 interface PlanCardProps {
   name: string;
@@ -9,13 +10,6 @@ interface PlanCardProps {
 }
 
 const PlanCard = (plan: PlanCardProps) => {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <div className="flex flex-col justify-between border border-gray-200 rounded-2xl p-6 bg-white shadow-md hover:shadow-xl transition-shadow duration-300">
       <div>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { scrollToSection } from "../../utils/ScrollToSection";
 
 const NAV_ITEMS = [
   { id: "home", label: "Início" },
@@ -42,13 +43,6 @@ const Navigation = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [activeSection]);
-
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <nav className="fixed top-0 z-30 w-full bg-white border-b border-gray-200 shadow-sm">

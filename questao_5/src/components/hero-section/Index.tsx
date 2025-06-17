@@ -1,11 +1,6 @@
-const HeroSection = () => {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+import { scrollToSection } from "../../utils/ScrollToSection";
 
+const HeroSection = () => {
   return (
     <section
       id="home"
